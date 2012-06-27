@@ -82,6 +82,21 @@ class User {
 		
 	}
 	
+	function clientVitals($client_vitals)
+	{
+		/*$data = array(
+			"first_name" => $user_info["first_name"],
+			"last_name" => $user_info["last_name"],
+			"mobile_number" => $user_info["mobile_number"],
+			"dob" => $user_info["dob"],
+			"email" => $user_info["email"],
+			"password" => $user_info["password"],
+					
+			);*/
+				
+		return $this->db->update("trainers",$trainer_info,"trainer_id=".$trainer_info["trainer_id"]);	
+		
+	}
 	
 		
 }
